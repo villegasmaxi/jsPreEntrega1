@@ -1,1 +1,4 @@
- .boton{background-color:antiquewhite; border: 2px  solid black;}
+ .marco{margin:1%; display: flex;justify-content: center;}
+ .boton{ background-color:orange; border: 2px  solid black;}
+ .title{text-align: center; border: 2px solid black;}
+ h1{margin: 5px auto; color:black;}
