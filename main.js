@@ -30,7 +30,23 @@ function corre() {
     return alert("Genial, juntamos " + montoRecaudado + ". Y nos quedo " + propina +" para la propina.");
   }
 
-  const numAmigos = prompt("Cuantos somos para cenar?");
-  const costoCena = prompt("Cuanto costo la cena?");
+  let numAmigos = prompt("Cuantos somos para cenar?")
+  while(isNaN(numAmigos) || numAmigos<2){
+    alert("deben ser al menos dos amigos para la romana")
+     numAmigos = prompt(" otra vez Cuantos somos para cenar?")
+    
+   
+  }
+  
+   
+  let costoCena = prompt("Cuanto costo la cena?");
+  while(costoCena<=0){
+    alert("el costo debe ser un numero positivo")
+     costoCena = prompt(" otra vez Cuanto costo la cena?")
+  }
+
   montoRecaudado = calculoRomana(numAmigos, costoCena);
-}
+//   const numAmigos = prompt("Cuantos somos para cenar?");
+//   const costoCena = prompt("Cuanto costo la cena?");
+//   montoRecaudado = calculoRomana(numAmigos, costoCena);
+ }
