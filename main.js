@@ -1,3 +1,4 @@
+//funcion corre para correrla desde el html
 function corre() {
   function calculoRomana(numAmigos, costoCena) {
     let montoRecaudado = 0;
@@ -29,16 +30,14 @@ function corre() {
     let propina = montoRecaudado - costoCena;
     return alert("Genial, juntamos " + montoRecaudado + ". Y nos quedo " + propina +" para la propina.");
   }
-
+   // validacion de entrada de datos debe ser un numero y mayor a 2 como minimo, sino alert y va de vuelta  
   let numAmigos = prompt("Cuantos somos para cenar?")
   while(isNaN(numAmigos) || numAmigos<2){
     alert("deben ser al menos dos amigos para la romana")
      numAmigos = prompt(" otra vez Cuantos somos para cenar?")
-    
-   
   }
   
-   
+   //validacion de entrada de datos debe ser un numero positivo sino alert y va de nuevo
   let costoCena = prompt("Cuanto costo la cena?");
   while(costoCena<=0){
     alert("el costo debe ser un numero positivo")
@@ -46,7 +45,5 @@ function corre() {
   }
 
   montoRecaudado = calculoRomana(numAmigos, costoCena);
-//   const numAmigos = prompt("Cuantos somos para cenar?");
-//   const costoCena = prompt("Cuanto costo la cena?");
-//   montoRecaudado = calculoRomana(numAmigos, costoCena);
+
  }
